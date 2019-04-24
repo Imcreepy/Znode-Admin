@@ -29,7 +29,10 @@ public class Login{
 	public void setLoginDetails(String username,String password)
 	{
 		loginPage = PageFactory.initElements(Invoke.webDriver,LoginPage.class);
-		loginPage.setLoginDetails(username, password);		
+		loginPage.setLoginDetails(username, password);
+		loginPage.clickLogin();
 	}// End of details page
+	
+	
 	
 }// End of set browser

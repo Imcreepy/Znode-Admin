@@ -8,9 +8,9 @@
 <!--  	The test for all the user log-in till landing page -->
  	<test name="log-in">
   		<parameter name="browser" value="chrome"/>
-	  	<parameter name="url"  value="live" />	
-	  	<parameter name="username" value="mukul.chaudhari@mrrsoft.com"/>
-	  	<parameter name="password"  value="admin@123" />	
+	  	<parameter name="url"  value="automation" />	
+	  	<parameter name="username" value="admin@znode.com"/>
+	  	<parameter name="password"  value="admin12345" />	
 	  	<classes>
 	  		<class name="login.Login"/>	
 	    </classes>

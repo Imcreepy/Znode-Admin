@@ -53,9 +53,18 @@ public class Invoke {
 		{
 			switch(url.toLowerCase())
 			{
-				case "live":
-					webDriver.get("http://stageadmin.artifi.net/Dashboard?divisionId=28");
+				case "automation":
+					webDriver.get("http://admin.automation.znode.amla.io:802/");
 					break;
+				case "qa":
+					webDriver.get("http://admin.qa.znode.amla.io:801/");
+					break;
+				case "production":
+					webDriver.get("http://admin.znodellc.com/");
+					break;
+				case "uat":
+					webDriver.get("https://admin9x.znodellc.com/");
+					break;	
 				default:
 					System.out.println("Can not able to get URL");
 			}// End of URL switch

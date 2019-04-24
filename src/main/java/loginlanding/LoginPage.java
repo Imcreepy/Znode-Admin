@@ -5,13 +5,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage{
 
-	@FindBy(xpath = "//input[@data-test-selector = 'txtEmail']")
+	@FindBy(xpath = "//input[@id='btnUsername']")
 	private WebElement userName;
 	
-	@FindBy(xpath = "//input[@data-test-selector = 'txtPassword']")
+	@FindBy(xpath = "//input[@id='btnPassword']")
 	private WebElement passWord;
 	
-
+	@FindBy(xpath = "//button[@id='Login']")
+	private WebElement login;
 
 	// Method for the new user log-in details set-up
 	public void setLoginDetails(String username,String password)
@@ -24,5 +25,11 @@ public class LoginPage{
 		
 	}// End of setLoginDetails
 
+	// Method for log-in
+	public void clickLogin()
+	{
+		login.click();
+		
+	}// End of clickLogin
 	
 }// End of class LoginObjects
