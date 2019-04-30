@@ -3,11 +3,12 @@ package login;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import driver.Browser;
 import driver.Invoke;
-import loginlanding.LoginPage;
+import login.LoginPage;
 
-public class Login{
+public class LoginPageTest{
 	
 	LoginPage loginPage;
 

@@ -1,6 +1,7 @@
-package loginlanding;
+package login;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage{
@@ -14,6 +15,7 @@ public class LoginPage{
 	@FindBy(xpath = "//button[@id='Login']")
 	private WebElement login;
 
+	
 	// Method for the new user log-in details set-up
 	public void setLoginDetails(String username,String password)
 	{
@@ -22,6 +24,7 @@ public class LoginPage{
 		
 		passWord.click();
 		passWord.sendKeys(password);
+
 		
 	}// End of setLoginDetails
 
